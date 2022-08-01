@@ -1,0 +1,22 @@
+ol, li {
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+html.dark {
+  img,
+  .dark-img-bg {filter:brightness(0.8) saturate(1.25)}
+}
+
+#app, body, html, .content {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
