@@ -11,7 +11,7 @@ export default defineComponent({
           <el-header>
             <Header></Header>
           </el-header>
-          <el-main>
+          <el-main class={'main'}>
             <router-view />
           </el-main>
           <el-footer>Footer</el-footer>
