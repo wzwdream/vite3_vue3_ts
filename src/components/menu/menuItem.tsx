@@ -21,7 +21,7 @@ const MenuItem = defineComponent({
                 const slots = {
                     title: () => {
                         return <div>
-                            <span>{item.meta.routerName}</span>
+                            <span>{item.meta.title}</span>
                         </div>
                     }
                 }
@@ -31,7 +31,7 @@ const MenuItem = defineComponent({
                     })}
                 </el-sub-menu>
             } else {
-                return <el-menu-item index={item.path} onClick={() => jumpRoute(item.path)}>{item.meta.routerName}</el-menu-item>
+                return <el-menu-item index={item.path} onClick={() => jumpRoute(item.path)}>{item.meta.title}</el-menu-item>
             }
         }
     }

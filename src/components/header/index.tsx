@@ -12,7 +12,7 @@ export default defineComponent({
     const route = useRoute()
     return () => (
       <div class={'header'}>
-        <span>{route.meta.routerName}</span>
+        <span>{route.meta.title}</span>
         <el-button onClick={toggleDark} text round bg>
           <el-icon>
             {
