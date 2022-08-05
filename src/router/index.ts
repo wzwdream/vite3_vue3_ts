@@ -46,6 +46,12 @@ export const routes: RouteRecordRaw[] = [
         meta: { title: 'v-model双向绑定' },
     },
     {
+        path: '/vSlot',
+        name: 'VSlot',
+        component: () => import('@/views/vSlot/index'),
+        meta: { title: '插槽' },
+    },
+    {
         path: '/ceshi1',
         name: 'ceshi1',
         redirect: '/',
@@ -54,7 +60,7 @@ export const routes: RouteRecordRaw[] = [
             {
                 path: '/ceshi1-1',
                 name: 'ceshi1-1',
-                redirect: '/',
+                component: () => import('@/views/menuCeshi'),
                 meta: { title: '菜单测试1-1' },
             },
             {
@@ -66,13 +72,13 @@ export const routes: RouteRecordRaw[] = [
                     {
                         path: '/ceshi1-1-1',
                         name: 'ceshi1-1-1',
-                        redirect: '/',
+                        component: () => import('@/views/menuCeshi'),
                         meta: { title: '菜单测试1-1-1' },
                     },
                     {
                         path: '/ceshi1-1-2',
                         name: 'ceshi1-1-2',
-                        redirect: '/',
+                        component: () => import('@/views/menuCeshi'),
                         meta: { title: '菜单测试1-1-2' },
                     },       
                 ]
@@ -82,7 +88,7 @@ export const routes: RouteRecordRaw[] = [
     {
         path: '/ceshi2',
         name: 'ceshi2',
-        redirect: '/',
+        component: () => import('@/views/menuCeshi'),
         meta: { title: '菜单测试2' },
     }
 ]
