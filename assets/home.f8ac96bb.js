@@ -1,0 +1,1 @@
+import{d as o,a as s,c as e,b as n}from"./index.65c458eb.js";const r=o("main",{state:()=>({msg:"hello word"}),getters:{},actions:{}}),l=s({setup(){const t=r();return()=>e("div",null,[e("p",null,[n("Home")]),e("p",null,[t.msg])])}});export{l as default};
